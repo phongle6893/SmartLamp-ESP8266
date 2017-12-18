@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FGl-Mt-Mac">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="k3r-ld-yy0">
+            <objects>
+                <tabBarController id="FGl-Mt-Mac" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6sy-4A-Xrv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BaN-gO-zHx" kind="relationship" relationship="viewControllers" id="tmO-Pz-FXK"/>
+                        <segue destination="c2K-fY-mpQ" kind="relationship" relationship="viewControllers" id="VyJ-Bn-SY2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OH0-PG-grH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="725"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QoP-FZ-LBX">
+            <objects>
+                <viewController id="c2K-fY-mpQ" customClass="ViewController" customModule="SmartLamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64G-8H-gyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-8N-Tz0">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <connections>
+                                    <action selector="swicherAction:" destination="c2K-fY-mpQ" eventType="valueChanged" id="vU4-AO-e7s"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tbe-8N-Tz0" firstAttribute="centerY" secondItem="64G-8H-gyN" secondAttribute="centerY" id="aLT-2F-2zm"/>
+                            <constraint firstItem="Tbe-8N-Tz0" firstAttribute="centerX" secondItem="64G-8H-gyN" secondAttribute="centerX" id="e8B-UY-nCM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yap-ZD-6dc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="aM4-30-21L"/>
+                    <connections>
+                        <outlet property="switcher" destination="Tbe-8N-Tz0" id="zcT-JW-Rsg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1H9-4p-ubw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="1019"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="phC-Cc-N4v">
+            <objects>
+                <tableViewController id="BaN-gO-zHx" customClass="wifiConfigController" customModule="SmartLamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QpD-Gx-Ff6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="uSg-sj-nzM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He2-5Q-Gfz">
+                                    <rect key="frame" x="137.5" y="16" width="100" height="100"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi-signal" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-9P-ofE">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="He2-5Q-Gfz" secondAttribute="height" id="3Fc-Ov-e73"/>
+                                        <constraint firstItem="4Oh-9P-ofE" firstAttribute="leading" secondItem="He2-5Q-Gfz" secondAttribute="leading" id="QQg-Ys-lSU"/>
+                                        <constraint firstAttribute="bottom" secondItem="4Oh-9P-ofE" secondAttribute="bottom" id="pVp-Pl-AeQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="4Oh-9P-ofE" secondAttribute="trailing" id="sHL-Zm-O5k"/>
+                                        <constraint firstItem="4Oh-9P-ofE" firstAttribute="top" secondItem="He2-5Q-Gfz" secondAttribute="top" id="y8H-VX-dVf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="He2-5Q-Gfz" firstAttribute="centerX" secondItem="uSg-sj-nzM" secondAttribute="centerX" id="JgP-8G-c7o"/>
+                                <constraint firstItem="He2-5Q-Gfz" firstAttribute="top" secondItem="uSg-sj-nzM" secondAttribute="top" constant="16" id="Mq9-rl-AtS"/>
+                                <constraint firstAttribute="bottom" secondItem="He2-5Q-Gfz" secondAttribute="bottom" constant="16" id="i3j-Lh-FtM"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle=" " id="Sfb-Le-V5E">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XAK-bG-EDP">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XAK-bG-EDP" id="0dJ-6N-bhq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" translatesAutoresizingMaskIntoConstraints="NO" id="y6G-xD-d3d">
+                                                    <rect key="frame" x="16" y="4" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="y6G-xD-d3d" secondAttribute="height" id="pJ7-n0-9JP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P321" borderStyle="roundedRect" placeholder="SSID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdj-1S-DNe">
+                                                    <rect key="frame" x="59" y="4" width="308" height="35"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gdj-1S-DNe" firstAttribute="leading" secondItem="y6G-xD-d3d" secondAttribute="trailing" constant="8" id="Bi2-7r-vqY"/>
+                                                <constraint firstAttribute="bottom" secondItem="y6G-xD-d3d" secondAttribute="bottom" constant="4" id="KZE-JV-ll3"/>
+                                                <constraint firstItem="y6G-xD-d3d" firstAttribute="top" secondItem="0dJ-6N-bhq" secondAttribute="top" constant="4" id="X0y-4e-Yyv"/>
+                                                <constraint firstItem="gdj-1S-DNe" firstAttribute="top" secondItem="0dJ-6N-bhq" secondAttribute="top" constant="4" id="hLR-sK-CNR"/>
+                                                <constraint firstAttribute="bottom" secondItem="gdj-1S-DNe" secondAttribute="bottom" constant="4" id="kNJ-FO-a1a"/>
+                                                <constraint firstItem="y6G-xD-d3d" firstAttribute="leading" secondItem="0dJ-6N-bhq" secondAttribute="leading" constant="16" id="w5E-jt-ulh"/>
+                                                <constraint firstAttribute="trailing" secondItem="gdj-1S-DNe" secondAttribute="trailing" constant="8" id="xQI-6H-H3x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Um-hQ-kG7">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Um-hQ-kG7" id="iJi-aa-Mlb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="sHK-Tf-uxL">
+                                                    <rect key="frame" x="16" y="4" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="sHK-Tf-uxL" secondAttribute="height" id="e3F-wO-tbf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xxxxxxxx" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4HF-vX-oJX">
+                                                    <rect key="frame" x="59" y="4" width="308" height="35"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4HF-vX-oJX" secondAttribute="bottom" constant="4" id="Bto-01-hYa"/>
+                                                <constraint firstItem="4HF-vX-oJX" firstAttribute="leading" secondItem="sHK-Tf-uxL" secondAttribute="trailing" constant="8" id="G3l-WI-EAE"/>
+                                                <constraint firstItem="sHK-Tf-uxL" firstAttribute="leading" secondItem="iJi-aa-Mlb" secondAttribute="leading" constant="16" id="U0l-hd-ea3"/>
+                                                <constraint firstItem="4HF-vX-oJX" firstAttribute="top" secondItem="iJi-aa-Mlb" secondAttribute="top" constant="4" id="Uuf-Nw-oep"/>
+                                                <constraint firstItem="sHK-Tf-uxL" firstAttribute="top" secondItem="iJi-aa-Mlb" secondAttribute="top" constant="4" id="nXU-yG-cFa"/>
+                                                <constraint firstAttribute="bottom" secondItem="sHK-Tf-uxL" secondAttribute="bottom" constant="4" id="vFk-Xt-jqD"/>
+                                                <constraint firstAttribute="trailing" secondItem="4HF-vX-oJX" secondAttribute="trailing" constant="8" id="wXo-Pr-d0x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HRC-Ea-gMk">
+                                        <rect key="frame" x="0.0" y="248" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HRC-Ea-gMk" id="gZn-KQ-I8A">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndj-kv-oAf">
+                                                    <rect key="frame" x="0.0" y="4" width="375" height="35"/>
+                                                    <color key="backgroundColor" red="0.396078431372549" green="0.33333333333333331" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Connect wifi">
+                                                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="connectAction:" destination="BaN-gO-zHx" eventType="touchUpInside" id="YtY-2H-ZHh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ndj-kv-oAf" firstAttribute="width" secondItem="gZn-KQ-I8A" secondAttribute="width" id="MrL-Eo-sGY"/>
+                                                <constraint firstItem="Ndj-kv-oAf" firstAttribute="top" secondItem="gZn-KQ-I8A" secondAttribute="top" constant="4" id="ZGD-S9-gb3"/>
+                                                <constraint firstItem="Ndj-kv-oAf" firstAttribute="centerX" secondItem="gZn-KQ-I8A" secondAttribute="centerX" id="Zzj-ws-j2C"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ndj-kv-oAf" secondAttribute="bottom" constant="4" id="ngr-cy-Y1r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BaN-gO-zHx" id="Ewl-EU-S9H"/>
+                            <outlet property="delegate" destination="BaN-gO-zHx" id="KII-A3-Ggc"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Wifi" id="ZuL-HC-PbV"/>
+                    <navigationItem key="navigationItem" title="Login" id="s7Q-MK-cK2"/>
+                    <connections>
+                        <outlet property="pass" destination="4HF-vX-oJX" id="nAb-Kk-oXb"/>
+                        <outlet property="ssid" destination="gdj-1S-DNe" id="N2x-Re-Esp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLJ-R3-27a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="key" width="512" height="512"/>
+        <image name="wifi" width="512" height="512"/>
+        <image name="wifi-signal" width="512" height="512"/>
+    </resources>
+</document>

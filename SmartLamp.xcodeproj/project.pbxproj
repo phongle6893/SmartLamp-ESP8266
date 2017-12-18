@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2661222F1FE7CCC80062505E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2661222E1FE7CCC80062505E /* ExternalAccessory.framework */; };
+		26773F5A1FE6CCD900290A6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26773F591FE6CCD900290A6B /* GoogleService-Info.plist */; };
+		268502361FCB0A280046E701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268502351FCB0A280046E701 /* ViewController.swift */; };
+		2692E6701FC86FA50095B7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E66F1FC86FA50095B7AC /* AppDelegate.swift */; };
+		2692E6751FC86FA50095B7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692E6731FC86FA50095B7AC /* Main.storyboard */; };
+		2692E6771FC86FA50095B7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2692E6761FC86FA50095B7AC /* Assets.xcassets */; };
+		2692E67A1FC86FA50095B7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692E6781FC86FA50095B7AC /* LaunchScreen.storyboard */; };
+		2692E6821FC876C50095B7AC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6811FC876C50095B7AC /* Constant.swift */; };
+		2692E6841FC8798C0095B7AC /* RemoteLampController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6831FC8798C0095B7AC /* RemoteLampController.swift */; };
+		2692E6861FC879BE0095B7AC /* LampModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6851FC879BE0095B7AC /* LampModel.swift */; };
+		2692E6881FC87BD30095B7AC /* LampTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */; };
+		26BE68681FE6AEA100BF6723 /* wifiConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */; };
+		26F5A1241FCFAA4C007676C5 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */; };
+		B65A5AB1017061AF36246641 /* Pods_SmartLamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		226FA20CE74B33C2CBC4A8BA /* Pods-SmartLamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLamp/Pods-SmartLamp.release.xcconfig"; sourceTree = "<group>"; };
+		2661222E1FE7CCC80062505E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		26773F591FE6CCD900290A6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		268502351FCB0A280046E701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2692E66C1FC86FA50095B7AC /* SmartLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2692E66F1FC86FA50095B7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2692E6741FC86FA50095B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2692E6761FC86FA50095B7AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2692E6791FC86FA50095B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2692E67B1FC86FA50095B7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2692E6811FC876C50095B7AC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2692E6831FC8798C0095B7AC /* RemoteLampController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLampController.swift; sourceTree = "<group>"; };
+		2692E6851FC879BE0095B7AC /* LampModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampModel.swift; sourceTree = "<group>"; };
+		2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampTableViewCell.swift; sourceTree = "<group>"; };
+		26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLamp.entitlements; sourceTree = "<group>"; };
+		26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifiConfigController.swift; sourceTree = "<group>"; };
+		26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
+		603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartLamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC3D33340200963DE94E12A /* Pods-SmartLamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLamp/Pods-SmartLamp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2692E6691FC86FA50095B7AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2661222F1FE7CCC80062505E /* ExternalAccessory.framework in Frameworks */,
+				B65A5AB1017061AF36246641 /* Pods_SmartLamp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0821D935809C36209E575689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2661222E1FE7CCC80062505E /* ExternalAccessory.framework */,
+				603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2692E6631FC86FA50095B7AC = {
+			isa = PBXGroup;
+			children = (
+				2692E66E1FC86FA50095B7AC /* SmartLamp */,
+				2692E66D1FC86FA50095B7AC /* Products */,
+				A90AB0BFB64DF84C85147459 /* Pods */,
+				0821D935809C36209E575689 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2692E66D1FC86FA50095B7AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2692E66C1FC86FA50095B7AC /* SmartLamp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2692E66E1FC86FA50095B7AC /* SmartLamp */ = {
+			isa = PBXGroup;
+			children = (
+				26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */,
+				26F5A1221FCFAA38007676C5 /* UIImageColor */,
+				2692E66F1FC86FA50095B7AC /* AppDelegate.swift */,
+				2692E6731FC86FA50095B7AC /* Main.storyboard */,
+				2692E6761FC86FA50095B7AC /* Assets.xcassets */,
+				2692E6781FC86FA50095B7AC /* LaunchScreen.storyboard */,
+				2692E67B1FC86FA50095B7AC /* Info.plist */,
+				2692E6811FC876C50095B7AC /* Constant.swift */,
+				2692E6831FC8798C0095B7AC /* RemoteLampController.swift */,
+				2692E6851FC879BE0095B7AC /* LampModel.swift */,
+				2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */,
+				268502351FCB0A280046E701 /* ViewController.swift */,
+				26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */,
+				26773F591FE6CCD900290A6B /* GoogleService-Info.plist */,
+			);
+			path = SmartLamp;
+			sourceTree = "<group>";
+		};
+		26F5A1221FCFAA38007676C5 /* UIImageColor */ = {
+			isa = PBXGroup;
+			children = (
+				26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */,
+			);
+			path = UIImageColor;
+			sourceTree = "<group>";
+		};
+		A90AB0BFB64DF84C85147459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AC3D33340200963DE94E12A /* Pods-SmartLamp.debug.xcconfig */,
+				226FA20CE74B33C2CBC4A8BA /* Pods-SmartLamp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2692E66B1FC86FA50095B7AC /* SmartLamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2692E67E1FC86FA50095B7AC /* Build configuration list for PBXNativeTarget "SmartLamp" */;
+			buildPhases = (
+				E059A21B6ACFEAB765059C6F /* [CP] Check Pods Manifest.lock */,
+				2692E6681FC86FA50095B7AC /* Sources */,
+				2692E6691FC86FA50095B7AC /* Frameworks */,
+				2692E66A1FC86FA50095B7AC /* Resources */,
+				C60D5C2F8C5C69628BB275EF /* [CP] Embed Pods Frameworks */,
+				D22D6B0A595ABF4CB411EF89 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLamp;
+			productName = SmartLamp;
+			productReference = 2692E66C1FC86FA50095B7AC /* SmartLamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2692E6641FC86FA50095B7AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = PhongLe;
+				TargetAttributes = {
+					2692E66B1FC86FA50095B7AC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2692E6671FC86FA50095B7AC /* Build configuration list for PBXProject "SmartLamp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2692E6631FC86FA50095B7AC;
+			productRefGroup = 2692E66D1FC86FA50095B7AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2692E66B1FC86FA50095B7AC /* SmartLamp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2692E66A1FC86FA50095B7AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2692E67A1FC86FA50095B7AC /* LaunchScreen.storyboard in Resources */,
+				26773F5A1FE6CCD900290A6B /* GoogleService-Info.plist in Resources */,
+				2692E6771FC86FA50095B7AC /* Assets.xcassets in Resources */,
+				2692E6751FC86FA50095B7AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C60D5C2F8C5C69628BB275EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLamp/Pods-SmartLamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D22D6B0A595ABF4CB411EF89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLamp/Pods-SmartLamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E059A21B6ACFEAB765059C6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2692E6681FC86FA50095B7AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268502361FCB0A280046E701 /* ViewController.swift in Sources */,
+				2692E6841FC8798C0095B7AC /* RemoteLampController.swift in Sources */,
+				2692E6861FC879BE0095B7AC /* LampModel.swift in Sources */,
+				2692E6881FC87BD30095B7AC /* LampTableViewCell.swift in Sources */,
+				26F5A1241FCFAA4C007676C5 /* UIImageColors.swift in Sources */,
+				2692E6701FC86FA50095B7AC /* AppDelegate.swift in Sources */,
+				26BE68681FE6AEA100BF6723 /* wifiConfigController.swift in Sources */,
+				2692E6821FC876C50095B7AC /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2692E6731FC86FA50095B7AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2692E6741FC86FA50095B7AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2692E6781FC86FA50095B7AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2692E6791FC86FA50095B7AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2692E67C1FC86FA50095B7AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2692E67D1FC86FA50095B7AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2692E67F1FC86FA50095B7AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC3D33340200963DE94E12A /* Pods-SmartLamp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartLamp/SmartLamp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FWWK23S85;
+				INFOPLIST_FILE = SmartLamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmute.edu.pm.SmartLamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2692E6801FC86FA50095B7AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226FA20CE74B33C2CBC4A8BA /* Pods-SmartLamp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartLamp/SmartLamp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FWWK23S85;
+				INFOPLIST_FILE = SmartLamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmute.edu.pm.SmartLamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2692E6671FC86FA50095B7AC /* Build configuration list for PBXProject "SmartLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2692E67C1FC86FA50095B7AC /* Debug */,
+				2692E67D1FC86FA50095B7AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2692E67E1FC86FA50095B7AC /* Build configuration list for PBXNativeTarget "SmartLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2692E67F1FC86FA50095B7AC /* Debug */,
+				2692E6801FC86FA50095B7AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2692E6641FC86FA50095B7AC /* Project object */;
+}
