@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class wifiConfigController: UITableViewController {
     // 1
@@ -37,17 +36,18 @@ class wifiConfigController: UITableViewController {
     }
     
     func changeWifi(ssid: String, pass: String, completion: @escaping (String)->Void) {
-        print("wifi changing")
-        let url = URL(string: "http://192.168.4.1/change?ssid=\(ssid)&pass=\(pass)")
-        URLSession.shared.dataTask(with: url!) { (data, res, err) in
-            print("data task callback")
-//            if err == nil {
-//
-//            }else {
-//                print(res!)
-//                print(data!)
-//            }
-        }.resume()
+//        print("wifi changing")
+//        let url = URL(string: "http://192.168.4.1/change?ssid=\(ssid)&pass=\(pass)")
+//        URLSession.shared.dataTask(with: url!) { (data, res, err) in
+//            print("data task callback")
+////            if err == nil {
+////
+////            }else {
+////                print(res!)
+////                print(data!)
+////            }
+//        }.resume()
+        
     }
     
 }

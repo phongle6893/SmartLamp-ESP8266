@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SocketIO
 class RemoteLampController: UITableViewController{
     
 //    let socket = SocketIOClient(socketURL: URL(string: "http://127.0.0.1:8000")!, config: [.log(true), .compress])

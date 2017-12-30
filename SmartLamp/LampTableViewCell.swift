@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SocketIO
 
 class LampTableViewCell: UITableViewCell {
     var id: Int = 0

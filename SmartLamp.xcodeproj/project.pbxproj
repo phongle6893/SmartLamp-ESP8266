@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2661222F1FE7CCC80062505E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2661222E1FE7CCC80062505E /* ExternalAccessory.framework */; };
 		26773F5A1FE6CCD900290A6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26773F591FE6CCD900290A6B /* GoogleService-Info.plist */; };
 		268502361FCB0A280046E701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268502351FCB0A280046E701 /* ViewController.swift */; };
 		2692E6701FC86FA50095B7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E66F1FC86FA50095B7AC /* AppDelegate.swift */; };
@@ -18,10 +17,35 @@
 		2692E6841FC8798C0095B7AC /* RemoteLampController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6831FC8798C0095B7AC /* RemoteLampController.swift */; };
 		2692E6861FC879BE0095B7AC /* LampModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6851FC879BE0095B7AC /* LampModel.swift */; };
 		2692E6881FC87BD30095B7AC /* LampTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */; };
+		2694096F1FE7FEA20057D7B8 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694096A1FE7FE4E0057D7B8 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26BE68681FE6AEA100BF6723 /* wifiConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */; };
 		26F5A1241FCFAA4C007676C5 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */; };
-		B65A5AB1017061AF36246641 /* Pods_SmartLamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */; };
+		E1990F4C0B0B6BB28F726008 /* Pods_SmartLamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		269409571FE7FB860057D7B8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269409701FE7FEA20057D7B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2694096F1FE7FEA20057D7B8 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		226FA20CE74B33C2CBC4A8BA /* Pods-SmartLamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLamp/Pods-SmartLamp.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +62,15 @@
 		2692E6831FC8798C0095B7AC /* RemoteLampController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLampController.swift; sourceTree = "<group>"; };
 		2692E6851FC879BE0095B7AC /* LampModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampModel.swift; sourceTree = "<group>"; };
 		2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampTableViewCell.swift; sourceTree = "<group>"; };
+		2694094D1FE7FB860057D7B8 /* AppProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
+		2694094F1FE7FB860057D7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269409501FE7FB860057D7B8 /* ConfigWifi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConfigWifi.entitlements; sourceTree = "<group>"; };
+		2694095E1FE7FCD70057D7B8 /* AppProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
+		269409601FE7FCD70057D7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269409611FE7FCD70057D7B8 /* ConfigWifi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConfigWifi.entitlements; sourceTree = "<group>"; };
+		269409691FE7FE370057D7B8 /* RxWifi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxWifi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2694096A1FE7FE4E0057D7B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2694096C1FE7FE7D0057D7B8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLamp.entitlements; sourceTree = "<group>"; };
 		26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifiConfigController.swift; sourceTree = "<group>"; };
 		26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
@@ -50,8 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2661222F1FE7CCC80062505E /* ExternalAccessory.framework in Frameworks */,
-				B65A5AB1017061AF36246641 /* Pods_SmartLamp.framework in Frameworks */,
+				E1990F4C0B0B6BB28F726008 /* Pods_SmartLamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +93,9 @@
 		0821D935809C36209E575689 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2694096C1FE7FE7D0057D7B8 /* NetworkExtension.framework */,
+				2694096A1FE7FE4E0057D7B8 /* XCTest.framework */,
+				269409691FE7FE370057D7B8 /* RxWifi.framework */,
 				2661222E1FE7CCC80062505E /* ExternalAccessory.framework */,
 				603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */,
 			);
@@ -71,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				2692E66E1FC86FA50095B7AC /* SmartLamp */,
+				2694094C1FE7FB860057D7B8 /* ConfigWifi */,
+				2694095D1FE7FCD70057D7B8 /* ConfigWifi */,
 				2692E66D1FC86FA50095B7AC /* Products */,
 				A90AB0BFB64DF84C85147459 /* Pods */,
 				0821D935809C36209E575689 /* Frameworks */,
@@ -106,6 +143,26 @@
 			path = SmartLamp;
 			sourceTree = "<group>";
 		};
+		2694094C1FE7FB860057D7B8 /* ConfigWifi */ = {
+			isa = PBXGroup;
+			children = (
+				2694094D1FE7FB860057D7B8 /* AppProxyProvider.swift */,
+				2694094F1FE7FB860057D7B8 /* Info.plist */,
+				269409501FE7FB860057D7B8 /* ConfigWifi.entitlements */,
+			);
+			path = ConfigWifi;
+			sourceTree = "<group>";
+		};
+		2694095D1FE7FCD70057D7B8 /* ConfigWifi */ = {
+			isa = PBXGroup;
+			children = (
+				2694095E1FE7FCD70057D7B8 /* AppProxyProvider.swift */,
+				269409601FE7FCD70057D7B8 /* Info.plist */,
+				269409611FE7FCD70057D7B8 /* ConfigWifi.entitlements */,
+			);
+			path = ConfigWifi;
+			sourceTree = "<group>";
+		};
 		26F5A1221FCFAA38007676C5 /* UIImageColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +193,8 @@
 				2692E66A1FC86FA50095B7AC /* Resources */,
 				C60D5C2F8C5C69628BB275EF /* [CP] Embed Pods Frameworks */,
 				D22D6B0A595ABF4CB411EF89 /* [CP] Copy Pods Resources */,
+				269409571FE7FB860057D7B8 /* Embed App Extensions */,
+				269409701FE7FEA20057D7B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,7 +211,7 @@
 		2692E6641FC86FA50095B7AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = PhongLe;
 				TargetAttributes = {
@@ -317,6 +376,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -339,6 +399,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 			};
 			name = Debug;
 		};
@@ -374,6 +435,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -388,6 +450,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

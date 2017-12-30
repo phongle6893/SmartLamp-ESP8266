@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C605D795B1AA3936831B86157AD4C9E1"
-               BuildableName = "Starscream.framework"
-               BlueprintName = "Starscream"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "2692E66B1FC86FA50095B7AC"
+               BuildableName = "SmartLamp.app"
+               BlueprintName = "SmartLamp"
+               ReferencedContainer = "container:SmartLamp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,6 +30,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2692E66B1FC86FA50095B7AC"
+            BuildableName = "SmartLamp.app"
+            BlueprintName = "SmartLamp"
+            ReferencedContainer = "container:SmartLamp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -44,15 +53,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C605D795B1AA3936831B86157AD4C9E1"
-            BuildableName = "Starscream.framework"
-            BlueprintName = "Starscream"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "2692E66B1FC86FA50095B7AC"
+            BuildableName = "SmartLamp.app"
+            BlueprintName = "SmartLamp"
+            ReferencedContainer = "container:SmartLamp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -62,6 +72,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2692E66B1FC86FA50095B7AC"
+            BuildableName = "SmartLamp.app"
+            BlueprintName = "SmartLamp"
+            ReferencedContainer = "container:SmartLamp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -7,10 +7,10 @@ target 'SmartLamp' do
 
   # Pods for SmartLamp
   
-  # Reactive wifi
-  pod 'RxWifi'
+  # QRCode
+  pod 'QRCodeReader.swift'
   
-  #Firebase
+  # Firebase
   pod 'Firebase', '~> 4.7'
   pod 'FirebaseDatabase', '~> 4.1'
   
