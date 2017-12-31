@@ -11,14 +11,14 @@ import UIKit
 
 class LampModel {
     var id: Int
-    var name: String
-    var detail: String
-    var type: LampType
+    var owner: String?
+    var name: String?
+    var isOn: Bool?
     
-    init(id: Int, name: String, detail: String, type: LampType) {
+    init(id: Int, name: String?, owner: String?, isOn: Bool?){
         self.id = id
         self.name = name
-        self.detail = detail
-        self.type = type
+        self.owner = owner
+        self.isOn = isOn
     }
 }

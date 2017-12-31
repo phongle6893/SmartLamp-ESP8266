@@ -9,22 +9,22 @@
 import UIKit
 
 class LampTableViewCell: UITableViewCell {
-    var id: Int = 0
-    @IBOutlet weak var switcher: UISwitch!{
-        didSet{
-            switcher.setOn(false, animated: true)
+    var delegate: SettingDelegate?
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var switcher: UISwitch!
+    var lid = ""
+    @IBOutlet weak var settingButton: UIButton!
+    var isOwner: Bool? {
+        didSet {
+            if !isOwner! {
+                settingButton.alpha = 0
+                settingButton.isEnabled = false
+            }else {
+                settingButton.alpha = 1
+                settingButton.isEnabled = true
+            }
         }
     }
-    @IBOutlet weak var detail: UILabel!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var lampImage: UIImageView!
-    
-//    var socket = SocketIOClient(socketURL: URL(string: "http://127.0.0.1:8000")!, config: [.log(true), .compress]) {
-//        didSet{
-//
-//        }
-//    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,13 +37,20 @@ class LampTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBAction func switchAction(_ sender: Any) {
-        
-        
-//        if switcher.isOn {
-//            socket.emit("turnOn", with: [id])
-//        }else {
-//            socket.emit("turnOff", with: [id])
-//        }
+    
+    
+    @IBAction func settingAction(_ sender: Any) {
+        delegate?.settingLamp(lid: lid)
     }
+    @IBAction func switcherAction(_ sender: UISwitch) {
+        switch sender.isOn {
+        case true:
+            MyDBRef.lamp(id: lid).referenceDatabase().child("isOn").setValue(1)
+        default:
+            MyDBRef.lamp(id: lid).referenceDatabase().child("isOn").setValue(0)
+        }
+    }
+}
+protocol SettingDelegate {
+    func settingLamp(lid: String)
 }

@@ -10,8 +10,15 @@ target 'SmartLamp' do
   # QRCode
   pod 'QRCodeReader.swift'
   
+  # Wifi
+  pod 'RxWifi'
+  
+  # HUD
+  pod 'PKHUD', '~> 5.0'
+
   # Firebase
   pod 'Firebase', '~> 4.7'
   pod 'FirebaseDatabase', '~> 4.1'
+  pod 'FirebaseAuth', '~> 4.4'
   
 end

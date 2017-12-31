@@ -18,6 +18,17 @@
 		2692E6861FC879BE0095B7AC /* LampModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6851FC879BE0095B7AC /* LampModel.swift */; };
 		2692E6881FC87BD30095B7AC /* LampTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */; };
 		2694096F1FE7FEA20057D7B8 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694096A1FE7FE4E0057D7B8 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		269B0D041FF715D80052C078 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D031FF715D80052C078 /* RegisterViewController.swift */; };
+		269B0D0B1FF735250052C078 /* MyDatabaseRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D0A1FF735250052C078 /* MyDatabaseRef.swift */; };
+		269B0D181FF74FBF0052C078 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D171FF74FBF0052C078 /* LoginViewController.swift */; };
+		269B0D1D1FF7879B0052C078 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D1C1FF7879B0052C078 /* CameraPreview.swift */; };
+		269B0D201FF7F56A0052C078 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D1E1FF7F5690052C078 /* QRCodeViewController.swift */; };
+		269B0D211FF7F56A0052C078 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D1F1FF7F56A0052C078 /* QRScannerController.swift */; };
+		269B0D241FF7F87B0052C078 /* LampsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D231FF7F87B0052C078 /* LampsTableViewController.swift */; };
+		269B0D261FF7FEB90052C078 /* AddLampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D251FF7FEB90052C078 /* AddLampViewController.swift */; };
+		269B0D281FF8063B0052C078 /* MemberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D271FF8063B0052C078 /* MemberTableViewController.swift */; };
+		269B0D2A1FF8065D0052C078 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D291FF8065D0052C078 /* MemberTableViewCell.swift */; };
+		269B0D2F1FF8250F0052C078 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B0D2E1FF8250F0052C078 /* UserViewController.swift */; };
 		26BE68681FE6AEA100BF6723 /* wifiConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */; };
 		26F5A1241FCFAA4C007676C5 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */; };
 		E1990F4C0B0B6BB28F726008 /* Pods_SmartLamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603737E3CA9D6EBA4DA1A74B /* Pods_SmartLamp.framework */; };
@@ -71,6 +82,17 @@
 		269409691FE7FE370057D7B8 /* RxWifi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxWifi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2694096A1FE7FE4E0057D7B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2694096C1FE7FE7D0057D7B8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		269B0D031FF715D80052C078 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		269B0D0A1FF735250052C078 /* MyDatabaseRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatabaseRef.swift; sourceTree = "<group>"; };
+		269B0D171FF74FBF0052C078 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		269B0D1C1FF7879B0052C078 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		269B0D1E1FF7F5690052C078 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = ../../QRCodeReader/QRCodeReader/QRCodeViewController.swift; sourceTree = "<group>"; };
+		269B0D1F1FF7F56A0052C078 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		269B0D231FF7F87B0052C078 /* LampsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampsTableViewController.swift; sourceTree = "<group>"; };
+		269B0D251FF7FEB90052C078 /* AddLampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLampViewController.swift; sourceTree = "<group>"; };
+		269B0D271FF8063B0052C078 /* MemberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewController.swift; sourceTree = "<group>"; };
+		269B0D291FF8065D0052C078 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		269B0D2E1FF8250F0052C078 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLamp.entitlements; sourceTree = "<group>"; };
 		26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifiConfigController.swift; sourceTree = "<group>"; };
 		26F5A1231FCFAA4C007676C5 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
@@ -125,20 +147,12 @@
 		2692E66E1FC86FA50095B7AC /* SmartLamp */ = {
 			isa = PBXGroup;
 			children = (
-				26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */,
+				269B0D151FF73E690052C078 /* Wellcome */,
+				269B0D101FF73E060052C078 /* MainScreen */,
+				269B0D0F1FF73DCC0052C078 /* Models */,
+				269B0D0E1FF73DB70052C078 /* Helpers */,
+				269B0D0D1FF73D880052C078 /* AppConfig */,
 				26F5A1221FCFAA38007676C5 /* UIImageColor */,
-				2692E66F1FC86FA50095B7AC /* AppDelegate.swift */,
-				2692E6731FC86FA50095B7AC /* Main.storyboard */,
-				2692E6761FC86FA50095B7AC /* Assets.xcassets */,
-				2692E6781FC86FA50095B7AC /* LaunchScreen.storyboard */,
-				2692E67B1FC86FA50095B7AC /* Info.plist */,
-				2692E6811FC876C50095B7AC /* Constant.swift */,
-				2692E6831FC8798C0095B7AC /* RemoteLampController.swift */,
-				2692E6851FC879BE0095B7AC /* LampModel.swift */,
-				2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */,
-				268502351FCB0A280046E701 /* ViewController.swift */,
-				26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */,
-				26773F591FE6CCD900290A6B /* GoogleService-Info.plist */,
 			);
 			path = SmartLamp;
 			sourceTree = "<group>";
@@ -161,6 +175,105 @@
 				269409611FE7FCD70057D7B8 /* ConfigWifi.entitlements */,
 			);
 			path = ConfigWifi;
+			sourceTree = "<group>";
+		};
+		269B0D0D1FF73D880052C078 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				26BE68661FE6A92B00BF6723 /* SmartLamp.entitlements */,
+				26773F591FE6CCD900290A6B /* GoogleService-Info.plist */,
+				2692E67B1FC86FA50095B7AC /* Info.plist */,
+				2692E66F1FC86FA50095B7AC /* AppDelegate.swift */,
+				2692E6731FC86FA50095B7AC /* Main.storyboard */,
+				2692E6761FC86FA50095B7AC /* Assets.xcassets */,
+				2692E6781FC86FA50095B7AC /* LaunchScreen.storyboard */,
+			);
+			name = AppConfig;
+			sourceTree = "<group>";
+		};
+		269B0D0E1FF73DB70052C078 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2692E6811FC876C50095B7AC /* Constant.swift */,
+				269B0D0A1FF735250052C078 /* MyDatabaseRef.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		269B0D0F1FF73DCC0052C078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2692E6851FC879BE0095B7AC /* LampModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		269B0D101FF73E060052C078 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D2D1FF824A40052C078 /* User */,
+				269B0D221FF7F85D0052C078 /* Lamp Manager */,
+				269B0D191FF77DD20052C078 /* Config device */,
+				2692E6831FC8798C0095B7AC /* RemoteLampController.swift */,
+				268502351FCB0A280046E701 /* ViewController.swift */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		269B0D141FF73E4F0052C078 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D031FF715D80052C078 /* RegisterViewController.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		269B0D151FF73E690052C078 /* Wellcome */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D161FF74FAD0052C078 /* Login */,
+				269B0D141FF73E4F0052C078 /* Register */,
+			);
+			name = Wellcome;
+			sourceTree = "<group>";
+		};
+		269B0D161FF74FAD0052C078 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D171FF74FBF0052C078 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		269B0D191FF77DD20052C078 /* Config device */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D1E1FF7F5690052C078 /* QRCodeViewController.swift */,
+				269B0D1F1FF7F56A0052C078 /* QRScannerController.swift */,
+				269B0D1C1FF7879B0052C078 /* CameraPreview.swift */,
+			);
+			name = "Config device";
+			sourceTree = "<group>";
+		};
+		269B0D221FF7F85D0052C078 /* Lamp Manager */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D231FF7F87B0052C078 /* LampsTableViewController.swift */,
+				2692E6871FC87BD30095B7AC /* LampTableViewCell.swift */,
+				269B0D251FF7FEB90052C078 /* AddLampViewController.swift */,
+				269B0D271FF8063B0052C078 /* MemberTableViewController.swift */,
+				269B0D291FF8065D0052C078 /* MemberTableViewCell.swift */,
+				26BE68671FE6AEA100BF6723 /* wifiConfigController.swift */,
+			);
+			name = "Lamp Manager";
+			sourceTree = "<group>";
+		};
+		269B0D2D1FF824A40052C078 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				269B0D2E1FF8250F0052C078 /* UserViewController.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		26F5A1221FCFAA38007676C5 /* UIImageColor */ = {
@@ -311,14 +424,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269B0D241FF7F87B0052C078 /* LampsTableViewController.swift in Sources */,
+				269B0D0B1FF735250052C078 /* MyDatabaseRef.swift in Sources */,
+				269B0D281FF8063B0052C078 /* MemberTableViewController.swift in Sources */,
+				269B0D1D1FF7879B0052C078 /* CameraPreview.swift in Sources */,
+				269B0D211FF7F56A0052C078 /* QRScannerController.swift in Sources */,
+				269B0D041FF715D80052C078 /* RegisterViewController.swift in Sources */,
 				268502361FCB0A280046E701 /* ViewController.swift in Sources */,
 				2692E6841FC8798C0095B7AC /* RemoteLampController.swift in Sources */,
 				2692E6861FC879BE0095B7AC /* LampModel.swift in Sources */,
+				269B0D261FF7FEB90052C078 /* AddLampViewController.swift in Sources */,
 				2692E6881FC87BD30095B7AC /* LampTableViewCell.swift in Sources */,
 				26F5A1241FCFAA4C007676C5 /* UIImageColors.swift in Sources */,
 				2692E6701FC86FA50095B7AC /* AppDelegate.swift in Sources */,
+				269B0D2A1FF8065D0052C078 /* MemberTableViewCell.swift in Sources */,
 				26BE68681FE6AEA100BF6723 /* wifiConfigController.swift in Sources */,
 				2692E6821FC876C50095B7AC /* Constant.swift in Sources */,
+				269B0D201FF7F56A0052C078 /* QRCodeViewController.swift in Sources */,
+				269B0D181FF74FBF0052C078 /* LoginViewController.swift in Sources */,
+				269B0D2F1FF8250F0052C078 /* UserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
