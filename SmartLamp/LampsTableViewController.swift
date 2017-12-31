@@ -16,6 +16,8 @@ class LampsTableViewController: UITableViewController, SettingDelegate {
     var uid = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = .none
+
         HUD.flash(.progress, delay: TimeInterval(Int.max))
         uid = (Auth.auth().currentUser?.uid)!
         MyDBRef.user(id: uid).referenceDatabase().child("lamps").observe(.value) { (data) in

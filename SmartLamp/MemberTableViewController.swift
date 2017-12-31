@@ -14,6 +14,8 @@ class MemberTableViewController: UITableViewController {
     var dataSource: [(mid: String, active: Bool)] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = .none
+
         HUD.flash(.progress, delay: TimeInterval(Int.max))
 
         MyDBRef.lamp(id: lid!).referenceDatabase().child("members").observe(.value) { (data) in

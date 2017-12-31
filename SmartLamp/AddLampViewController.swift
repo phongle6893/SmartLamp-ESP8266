@@ -16,6 +16,7 @@ class AddLampViewController: UITableViewController {
     @IBOutlet weak var lid: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = .none
 
     }
     @IBAction func addAction(_ sender: Any) {
@@ -30,6 +31,7 @@ class AddLampViewController: UITableViewController {
                 }else if owner == "" {
                     
                     MyDBRef.lamp(id: self.lid.text!).referenceDatabase().child("members/\(uid!)").setValue(true)
+                    MyDBRef.lamp(id: self.lid.text!).referenceDatabase().child("owner").setValue(uid!)
                     let data: [String: Any] = [
                         "name": self.name.text!,
                         "isActive": true

@@ -19,6 +19,7 @@ class RegisterViewController: UITableViewController {
     @IBOutlet weak var confirmPasswod: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = .none
 
     }
 

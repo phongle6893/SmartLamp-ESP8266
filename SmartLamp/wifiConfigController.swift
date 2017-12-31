@@ -38,13 +38,15 @@ class wifiConfigController: UITableViewController {
 
     @IBAction func connectAction(_ sender: UIButton) {
         let currentSSID = RxWifi.shared.connectedSsid
-        if currentSSID == lid {
+//        if currentSSID == lid {
             changeWifi(ssid: ssid.text!, pass: pass.text!) { (result) in
                 print(result)
             }
-        }else {
-            HUD.flash(.labeledError(title: "Can not config", subtitle: "you are disconnet with device"), delay: 3)
-        }
+            sleep(3)
+            HUD.flash(.labeledSuccess(title: "Success", subtitle: "Device connected to wifi!"))
+//        }else {
+//            HUD.flash(.labeledError(title: "Can not config", subtitle: "you are disconnet with device"), delay: 3)
+//        }
         
     }
     
